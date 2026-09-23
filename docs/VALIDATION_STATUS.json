@@ -1,0 +1,6 @@
+{
+  "version": "0.5.0",
+  "model_comparison": "completed_known_case_pilot_no_stable_advantage",
+  "report": "docs/R09_VALIDATION_PUBLIC.md",
+  "full_long_form_validation": "not_completed"
+}

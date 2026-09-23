@@ -1,0 +1,14 @@
+{
+  "author_preferences": {
+    "language": "zh",
+    "output": "single_revision",
+    "notes": []
+  },
+  "protected_phrases": [
+    "技术容量占比"
+  ],
+  "facts": [],
+  "chapter_roles": {},
+  "decisions": [],
+  "school_template": null
+}

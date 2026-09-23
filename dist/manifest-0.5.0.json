@@ -1,0 +1,19 @@
+{
+  "version": "0.5.0",
+  "archives": [
+    {
+      "name": "thesis-craft-0.5.0.zip",
+      "sha256": "b90e2801bee56fc06cb5882fa8da8a87c6d9f9bb4be905d8e1fd5dd8d3c2dcb8",
+      "files": 26,
+      "bytes": 53080
+    },
+    {
+      "name": "thesis-craft-0.5.0-source.zip",
+      "sha256": "dffc4034fb4e8b6e8d5e354632a85ab1c091d72ce0c82a5596388e7f2c864d8a",
+      "files": 34,
+      "bytes": 65551
+    }
+  ],
+  "model_comparison": "completed_known_case_pilot_no_stable_advantage",
+  "evaluation_report": "docs/R09_VALIDATION_PUBLIC.md"
+}

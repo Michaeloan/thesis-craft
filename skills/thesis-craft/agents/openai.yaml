@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文守意"
+  short_description: "审查核对论据与口径，润色按段落任务改善表达、论述和章节衔接"
+  default_prompt: "使用 $thesis-craft 审查并润色以下论文片段，在已有材料和授权范围内修清表达，保留有效比较和研究口径，返回正文及必要的问题说明。"

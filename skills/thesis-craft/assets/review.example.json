@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "expression": {
+      "status": "not_checked",
+      "note": "指出本段真正的问题及已修复的主语、比较对象、指代或衔接；不要只写更通顺"
+    },
+    "argument": {
+      "status": "not_checked",
+      "note": "核对有效比较、机制、推论仍在；新增内容推进判断而非解释用途或堆提醒"
+    },
+    "scope": {
+      "status": "not_checked",
+      "note": "核对数值归属、单位、分母、年份、专名、限定及证据强度；说明资料边界"
+    },
+    "paragraph_cohesion": {
+      "status": "not_checked",
+      "note": "核对段落中心与句间承接；没有按统一比例压缩"
+    },
+    "chapter_cohesion": {
+      "status": "not_checked",
+      "note": "仅在实际检查整章后填写；区分重复内容的不同论述作用"
+    }
+  },
+  "issues": []
+}
