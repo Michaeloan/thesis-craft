@@ -32,7 +32,6 @@ def build():
     ignored = {"__pycache__", ".thesis-craft", ".validation-deps", "outputs", "local", ".git", ".venv", "dist"}
     allowed_roots = {"skills", "tools"}
     allowed_files = {"README.md", ".gitignore", "LICENSE", "NOTICE.md"}
-    allowed_docs = {"docs/R09_VALIDATION_PUBLIC.md", "docs/SOURCES.md", "docs/VALIDATION_STATUS.json"}
     source_entries, skill_entries = [], []
     for path in ROOT.rglob("*"):
         rel = path.relative_to(ROOT)
@@ -40,19 +39,13 @@ def build():
             continue
         if path.name.endswith((".pyc", ".codex-write")) or path.name.startswith((".env", "~$")):
             continue
-        if rel.parts[0] in allowed_roots or str(rel) in allowed_files or rel.as_posix() in allowed_docs:
+        if rel.parts[0] in allowed_roots or str(rel) in allowed_files:
             source_entries.append((path, "thesis-craft-project/" + rel.as_posix()))
         if path.is_relative_to(skill):
             skill_entries.append((path, "thesis-craft/" + path.relative_to(skill).as_posix()))
     reports = [archive(dist / f"thesis-craft-{version}.zip", skill_entries),
                archive(dist / f"thesis-craft-{version}-source.zip", source_entries)]
-    status_file = ROOT / "docs" / "VALIDATION_STATUS.json"
-    evaluation = json.loads(status_file.read_text(encoding="utf-8")) if status_file.exists() else {}
-    if evaluation.get("version") != version:
-        evaluation = {}
-    manifest = {"version": version, "archives": reports,
-                "model_comparison": evaluation.get("model_comparison", "not_run"),
-                "evaluation_report": evaluation.get("report")}
+    manifest = {"version": version, "archives": reports}
     (dist / f"manifest-{version}.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     return manifest
 
