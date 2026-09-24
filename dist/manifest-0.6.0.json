@@ -1,0 +1,17 @@
+{
+  "version": "0.6.0",
+  "archives": [
+    {
+      "name": "thesis-craft-0.6.0.zip",
+      "sha256": "aa93f561138a26fac241c7bf68f79a35c781111832291ea0a366bd287eb23295",
+      "files": 29,
+      "bytes": 60512
+    },
+    {
+      "name": "thesis-craft-0.6.0-source.zip",
+      "sha256": "1486b4a6543023fedabfa76b6e106bec2ac1867e61617e042f19131d4cec7af7",
+      "files": 34,
+      "bytes": 68347
+    }
+  ]
+}

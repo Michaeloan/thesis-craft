@@ -1,6 +1,6 @@
 # 审查、事实与引用
 
-诊断和提出方案不自动授权实施。用 [../assets/review-ledger.md](../assets/review-ledger.md)记录实际问题；作者已确认决定不反复询问，也不因评审语气强硬而改回。
+先按 [diagnose.md](diagnose.md) 区分表面症状与根因。诊断和提出方案不自动授权实施。用 [../assets/review-ledger.md](../assets/review-ledger.md)记录实际问题；作者已确认决定不反复询问，也不因评审语气强硬而改回。
 
 ## 先确定审查范围
 
@@ -16,7 +16,7 @@
 
 每条意见必须说清“修改后应满足什么”，例如“指出80%的分母为年度用电量”，而非“加强严谨性”。同一根因涉及多处时合并说明并列出位置；冲突意见回到证据核对，不以审稿人数量裁决。可以报告当前范围未发现实质问题；不虚构优点或问题来凑报告结构。
 
-执行修改时读取 [revision-bridge.md](revision-bridge.md)，复杂交接可用 [../assets/revision-brief.md](../assets/revision-brief.md)。复查应同时确认原问题已解决和没有新增语义偏移，不能将“给出建议”记为“已修复”。
+执行修改时读取 [repair.md](repair.md)；复杂交接再读 [revision-bridge.md](revision-bridge.md)，并可用 [../assets/revision-brief.md](../assets/revision-brief.md)。复查应同时确认原问题已解决和没有新增语义偏移，不能将“给出建议”记为“已修复”。
 
 ## 数值与计算
 

@@ -6,13 +6,22 @@
 
 创作论文守意，是希望把审查意见、修改目标和论文上下文连在一起，让每一轮修改都能沿着作者原有的意思继续推进。
 
-## 主要功能
+## 两大模块
 
-| 审查 | 润色 |
+| 发现问题 | 解决问题 |
 |---|---|
-| 定位具体问题，说明原文依据与影响，并提出可执行建议 | 调整表达与段落组织，保留作者的比较、依据、推论和结论口径 |
-| 区分明确问题、待核实事项和可选改进 | 根据研究对象、术语、年份、指标和图表信息保持前后一致 |
-| 给出修改目标，便于作者决定是否采纳 | 按句子、段落、小节或章节处理，并检查局部修改与上下文的衔接 |
+| 从表达、语义关系、论证、章节推进、证据、计算和文档呈现七个层次定位问题 | 按根因选择修句、重组、补强、迁移、删除、核验或版面修复 |
+| 先检查当前版本，识别过期或错误的审查意见 | 保留作者的比较、依据、推论、限定、术语和数据归属 |
+| 区分表面症状与根因，并给出改后应达到的状态 | 修改后检查定义、图表、引用、摘要、结论及后文承接 |
+
+## 长论文特色
+
+- **章节推进检查**：核对重要地区、类型、指标和案例是否按“定义与方法—结果—讨论—结论”逐步出现，避免后文突然引入重点对象。
+- **版本演化审查**：将历史问题标为已解决、部分解决、仍存在、复发、已变化或当前版本不成立，不把旧意见直接套到新稿。
+- **审稿意见核实**：先回到当前正文、计算资料和来源确认意见是否成立，再决定修改；不按意见语气或数量改稿。
+- **修改影响追踪**：公式、数字、术语、段落或图表变化后，自动提醒复核相关定义、引用、摘要、结论和交叉引用。
+- **安全迁移与删除**：整块删除前先识别独有论据、引文和未完成事项；语义结构不使用跨段正则批量处理。
+- **作者风格延续**：记录已认可案例、持续偏好、章节要求和当前任务限制，换会话后仍能继续。
 
 短片段可直接使用，不必建立项目。长论文可导入 DOCX、Markdown 或 UTF-8 文本，按章节整理原文、相关定义、图表和作者决定，并生成候选稿与续接记录。
 
@@ -34,7 +43,7 @@
 
 ## 安装
 
-下载并解压 [thesis-craft-0.5.0.zip](https://github.com/Michaeloan/thesis-craft/raw/refs/heads/main/dist/thesis-craft-0.5.0.zip)，将其中的 `thesis-craft` 文件夹复制到 Codex 的 Skills 目录：
+下载并解压 [thesis-craft-0.6.0.zip](https://github.com/Michaeloan/thesis-craft/raw/refs/heads/main/dist/thesis-craft-0.6.0.zip)，将其中的 `thesis-craft` 文件夹复制到 Codex 的 Skills 目录：
 
 ```powershell
 $skillHome = Join-Path $HOME ".codex\skills"
@@ -44,7 +53,7 @@ Copy-Item -LiteralPath ".\thesis-craft" -Destination $skillHome -Recurse
 
 如果使用自定义 `CODEX_HOME`，请将文件夹放入相应的 `skills` 路径。兼容的智能体也可以直接读取 `skills/thesis-craft/SKILL.md`。
 
-源码包：[thesis-craft-0.5.0-source.zip](https://github.com/Michaeloan/thesis-craft/raw/refs/heads/main/dist/thesis-craft-0.5.0-source.zip)。
+源码包：[thesis-craft-0.6.0-source.zip](https://github.com/Michaeloan/thesis-craft/raw/refs/heads/main/dist/thesis-craft-0.6.0-source.zip)。
 
 ## 使用示例
 
@@ -59,6 +68,14 @@ Copy-Item -LiteralPath ".\thesis-craft" -Destination $skillHome -Recurse
 审查并润色：
 
 > 使用 $thesis-craft 检查并润色这部分。依据现有数据和上下文处理表达与论述问题；需要补充依据的地方单独指出。
+
+核实审查意见：
+
+> 使用 $thesis-craft 核实这些审查意见。先检查当前稿和已有依据，区分成立、部分成立和当前版本不成立，再修改确实存在的问题。
+
+版本回顾：
+
+> 使用 $thesis-craft 对照旧稿和当前稿，说明历史问题哪些已解决、哪些仍存在或复发，并把剩余问题转成可执行修改。
 
 长篇论文：
 
